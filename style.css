@@ -10,11 +10,18 @@ body{
     font-family: 'League Spartan', sans-serif;
     font-size: 12px;
 }
+.open{
+    display: none;
+}
 picture{
     height: 534px;
 }
 header{
-    background-color: var(--pri-vdGray);
+    position: fixed;
+    padding: 1rem 2rem;
+}
+header .menu{
+    display: none;
 }
 nav ul{
     display: inline;
@@ -25,6 +32,7 @@ p{
     line-height: 2;
     overflow: scroll;
     max-height: 220px;
+    min-width: 172px;
 }
 .wrap{
     display: grid;
@@ -37,6 +45,8 @@ main{
 }
 main .txt{
     padding: 3rem 4rem;
+    max-height:400px ;
+    overflow: scroll;
 }
 main h1{
     font-size: 3rem;
@@ -65,7 +75,7 @@ main button{
 section{
     grid-area: 3/2/4/5;
     padding: 0rem 2rem;
-    height: 266px;
+    max-height: 240px;
 }
 section h3{
     font-size: 1.5rem;
@@ -77,9 +87,24 @@ section h3{
 }
 /* mobile */
 @media only screen and (max-width:768px){
+    .open{
+        display: none;
+        background-color: #fff;
+        padding: 1rem;
+    }
+    .open li ul{
+        display: inline;
+        font-weight: 600;
+    }
     header{
-        background-color: var(--pri-vdGray);
         text-align: center;
+        left: 33%;
+        padding: 2rem 2rem;
+    }
+    header .menu{
+        display: inline;
+        position: relative;
+        right: 33vw;
     }
     .wrap{
         display: flex;

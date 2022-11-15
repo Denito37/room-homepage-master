@@ -9,8 +9,19 @@
 </head>
 <body>
 
+  <div class="open">
+    <li>
+       <button><img src="images/icon-close.svg" alt="close menu"> </button>
+      <ul> Home</ul>
+      <ul> Shop</ul>
+      <ul> About </ul>
+      <ul> Contact</ul>
+    </li>
+  </div>
+
   <header>
     <nav>
+      <img class="menu" src="images/icon-hamburger.svg" alt="menu">
       <img src="images/logo.svg" alt="logo">
       <ul> Home</ul>
       <ul> Shop</ul>
@@ -26,7 +37,7 @@
           <source media="(max-width:768px)" srcset="images/mobile-image-hero-1.jpg">
           <img src="images/desktop-image-hero-1.jpg" alt="hero1">
         </picture>
-        <div class="txt">
+        <article class="txt">
           <h1> Discover innovative ways to decorate</h1>
           <p>
             We provide unmatched quality, comfort, and style for property owners across the country. 
@@ -38,14 +49,14 @@
             <button class="left" onclick="leftSwap()"><img src="images/icon-angle-left.svg" alt="left"> </button>
             <button class="right" onclick="rightSwap()"> <img src="images/icon-angle-right.svg" alt="right"></button>
           </div>
-        </div>
+        </article>
       </div> 
       <div class="slide2">
         <picture>
           <source media="(max-width:768px)" srcset="images/mobile-image-hero-2.jpg">
           <img src="images/desktop-image-hero-2.jpg" alt="hero1">
         </picture>
-        <div class="txt">
+        <article class="txt">
           <h1> We are available all across the globe</h1>
           <p>
             With stores all over the world, it's easy for you to find furniture for your home or place of business. 
@@ -57,14 +68,14 @@
             <button class="left" onclick="leftSwap()"><img src="images/icon-angle-left.svg" alt="left"> </button>
             <button class="right" onclick="rightSwap()"> <img src="images/icon-angle-right.svg" alt="right"></button>
           </div>
-        </div>
+        </article>
       </div>
       <div class="slide3">
         <picture>
           <source media="(max-width:768px)" srcset="images/mobile-image-hero-3.jpg">
           <img src="images/desktop-image-hero-3.jpg" alt="hero1">
         </picture>
-        <div class="txt">
+        <article class="txt">
           <h1> Manufactured with the best materials</h1>
           <p>
             Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
@@ -76,13 +87,13 @@
             <button class="left" onclick="leftSwap()"><img src="images/icon-angle-left.svg" alt="left"> </button>
             <button class="right" onclick="rightSwap()"> <img src="images/icon-angle-right.svg" alt="right"></button>
           </div>
-        </div>
+        </article>
       </div>
     </main>
 
     <img class="dark" src="images/image-about-dark.jpg" alt="dark-chair">
 
-    <section>
+    <section class="about">
       <h3> About our furniture</h3>
       <p>
         Our multifunctional collection blends design and function to suit your individual taste.
