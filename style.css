@@ -4,28 +4,12 @@
     --pri-dGray:hsl(0, 0%, 63%);
     --pri-vdGray:hsl(0, 0%, 27%);
 }
+/* *GENERAL */
 body{
     box-sizing: border-box;
     margin: 0;
     font-family: 'League Spartan', sans-serif;
     font-size: 12px;
-}
-.open{
-    display: none;
-}
-picture{
-    height: 534px;
-}
-header{
-    position: fixed;
-    padding: 1rem 2rem;
-}
-header .menu{
-    display: none;
-}
-nav ul{
-    display: inline;
-    color: #fff; 
 }
 p{
     color: var(--pri-dGray);
@@ -34,6 +18,22 @@ p{
     max-height: 220px;
     min-width: 172px;
 }
+picture{
+    height: 534px;
+}
+/* *HEADER */
+header{
+    position: absolute;
+    padding: 1rem 2rem;
+}
+header .menu{
+    display: none;
+}
+ul{
+    display: inline;
+    color: #fff; 
+}
+/* *MAIN */
 .wrap{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -72,6 +72,7 @@ main button{
 .dark{
     grid-area: 3/1/4/1;
 }
+/* *SECTION */
 section{
     grid-area: 3/2/4/5;
     padding: 0rem 2rem;
@@ -85,14 +86,14 @@ section h3{
 .light{
     grid-area: 3/5/4/5;
 }
-/* mobile */
+/* *mobile */
 @media only screen and (max-width:768px){
     .open{
-        display: none;
         background-color: #fff;
         padding: 1rem;
     }
     .open li ul{
+        color: #000;
         display: inline;
         font-weight: 600;
     }
@@ -111,10 +112,11 @@ section h3{
         flex-direction: column;
     }
     .slide1,.slide2,.slide3{
+        overflow: visible;
         display: flex;
         flex-direction: column;
     }
-    nav ul{
+    ul{
         display: none;
     }
     main{
@@ -128,7 +130,7 @@ section h3{
         padding: 1rem 2rem;
     }
 }
-/* to add class in JS on click*/
+/* *to add class in JS on click*/
 .hidden{
     display: none;
 }
