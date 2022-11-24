@@ -9,7 +9,9 @@ const left2 = document.querySelector('.left2');
 const right3 = document.querySelector('.right3');
 const left3 = document.querySelector('.left3');
 const closeM = document.querySelector('.open');
+const exitbtn = document.querySelector('.open button')
 const menu = document.querySelector('header img');
+const headerT = document.querySelector('header');
 let count = 1;
 
 slide2.classList.add("hidden");
@@ -17,7 +19,7 @@ slide3.classList.add("hidden");
 closeM.classList.add("hidden");
 
 // * Events
-closeM.addEventListener('click',close);
+exitbtn.addEventListener('click',close);
 menu.addEventListener('click', open);
 right.addEventListener('click', rightCounter);
 right2.addEventListener('click', rightCounter);
@@ -75,8 +77,9 @@ function leftSwap(){
 }
 function close(){
     closeM.classList.add("hidden");
-    console.log('hi');
+    headerT.classList.remove("hidden");
 }
 function open(){
     closeM.classList.remove("hidden");
+    headerT.classList.add("hidden");
 }

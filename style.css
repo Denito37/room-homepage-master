@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
 
 :root{
-    --pri-dGray:hsl(0, 0%, 63%);
-    --pri-vdGray:hsl(0, 0%, 27%);
+    --txt-clr:hsl(0, 0%, 63%);
+    --hd-clr:hsl(0, 0%, 27%);
 }
 /* *GENERAL */
 body{
     box-sizing: border-box;
     margin: 0;
     font-family: 'League Spartan', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 p{
-    color: var(--pri-dGray);
+    color: var(--txt-clr);
     line-height: 2;
     overflow: scroll;
     max-height: 220px;
@@ -46,7 +46,11 @@ main{
 main .txt{
     padding: 3rem 4rem;
     max-height:400px ;
-    overflow: scroll;
+}
+@media (width >= 769px){
+    main .txt{
+        overflow: scroll;
+    } 
 }
 main h1{
     font-size: 3rem;
@@ -87,15 +91,23 @@ section h3{
     grid-area: 3/5/4/5;
 }
 /* *mobile */
-@media only screen and (max-width:768px){
+@media (width <= 768px){
     .open{
         background-color: #fff;
-        padding: 1rem;
+        padding: 2rem;
+        display: flex;
     }
-    .open li ul{
+    .open button{
+        border: solid 0px;
+        background-color: transparent;
+        justify-self: center;
+        align-self: center;
+    }
+    .open nav ul{
         color: #000;
         display: inline;
         font-weight: 600;
+        font-size: 1rem;
     }
     header{
         text-align: center;
@@ -112,7 +124,6 @@ section h3{
         flex-direction: column;
     }
     .slide1,.slide2,.slide3{
-        overflow: visible;
         display: flex;
         flex-direction: column;
     }
