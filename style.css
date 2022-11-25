@@ -91,7 +91,7 @@ section h3{
     grid-area: 3/5/4/5;
 }
 /* *mobile */
-@media (width <= 768px){
+@media (max-width : 768px){
     .open{
         background-color: #fff;
         padding: 2rem;
