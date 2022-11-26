@@ -19,6 +19,7 @@ slide3.classList.add("hidden");
 closeM.classList.add("hidden");
 
 // * Events
+document.addEventListener('keydown', keyControls);
 exitbtn.addEventListener('click',close);
 menu.addEventListener('click', open);
 right.addEventListener('click', rightCounter);
@@ -82,4 +83,14 @@ function close(){
 function open(){
     closeM.classList.remove("hidden");
     headerT.classList.add("hidden");
+}
+function keyControls(controls){
+    if(controls.key === "ArrowRight"){
+        rightSwap();
+        rightCounter();
+    }
+    if(controls.key === "ArrowLeft"){
+        leftSwap();
+        leftCounter();
+    }
 }
