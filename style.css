@@ -47,7 +47,7 @@ main .txt{
     padding: 3rem 4rem;
     max-height:400px ;
 }
-@media (width >= 769px){
+@media (min-width : 769px){
     main .txt{
         overflow: scroll;
     } 
@@ -72,12 +72,12 @@ main button{
 .slide1,.slide2,.slide3{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    transition: all 2s ease; /* *Test*/
+    transition: width 2s ease-out;/* * transition* */
 }
+/* *SECTION */
 .dark{
     grid-area: 3/1/4/1;
 }
-/* *SECTION */
 section{
     grid-area: 3/2/4/5;
     padding: 0rem 2rem;
@@ -97,6 +97,7 @@ section h3{
         background-color: #fff;
         padding: 2rem;
         display: flex;
+        transition: all .2s ease-out; /* *change all* */
     }
     .open button{
         border: solid 0px;
@@ -145,4 +146,11 @@ section h3{
 /* *to add class in JS on click*/
 .hidden{
     display: none;
+}
+.zero{
+    height: 0px;
+    padding: 0px;
+}
+.slideTransition{
+    width: auto; /* *Test*/
 }
