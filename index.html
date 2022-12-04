@@ -32,11 +32,13 @@
 
   <div class="wrap">
     <main>
+
       <div class="slide1">
         <picture>
-          <source media="(max-width:768px)" srcset="images/mobile-image-hero-1.jpg">
+          <source media="(max-width:550px)" srcset="images/mobile-image-hero-1.jpg">
           <img src="images/desktop-image-hero-1.jpg" alt="hero1">
         </picture>
+
         <article class="txt">
           <h1> Discover innovative ways to decorate</h1>
           <p>
@@ -45,17 +47,15 @@
             own style with our collection and make your property a reflection of you and what you love.
           </p>
           <a href="#">Shop now <img src="images/icon-arrow.svg" alt="icon-arrow"></a>
-          <div class="btns" >
-            <button class="left" onclick="leftSwap()"><img src="images/icon-angle-left.svg" alt="left"> </button>
-            <button class="right" onclick="rightSwap()"> <img src="images/icon-angle-right.svg" alt="right"></button>
-          </div>
         </article>
       </div> 
+
       <div class="slide2">
         <picture>
-          <source media="(max-width:768px)" srcset="images/mobile-image-hero-2.jpg">
+          <source media="(max-width:550px)" srcset="images/mobile-image-hero-2.jpg">
           <img src="images/desktop-image-hero-2.jpg" alt="hero1">
         </picture>
+
         <article class="txt">
           <h1> We are available all across the globe</h1>
           <p>
@@ -64,17 +64,15 @@
             store locator. Any questions? Don't hesitate to contact us today.
           </p>
           <a href="#">Shop now <img src="images/icon-arrow.svg" alt="icon-arrow"></a> 
-          <div class="btns" >
-            <button class="left2" onclick="leftSwap()"><img src="images/icon-angle-left.svg" alt="left"> </button>
-            <button class="right2" onclick="rightSwap()"> <img src="images/icon-angle-right.svg" alt="right"></button>
-          </div>
         </article>
       </div>
+
       <div class="slide3">
         <picture>
-          <source media="(max-width:768px)" srcset="images/mobile-image-hero-3.jpg">
+          <source media="(max-width:550px)" srcset="images/mobile-image-hero-3.jpg">
           <img src="images/desktop-image-hero-3.jpg" alt="hero1">
         </picture>
+
         <article class="txt">
           <h1> Manufactured with the best materials</h1>
           <p>
@@ -83,27 +81,32 @@
             experience in this industry, we understand what customers want for their home and office.
           </p>  
           <a href="#">Shop now <img src="images/icon-arrow.svg" alt="icon-arrow"></a> 
-          <div class="btns" >
-            <button class="left3" onclick="leftSwap()"><img src="images/icon-angle-left.svg" alt="left"> </button>
-            <button class="right3" onclick="rightSwap()"> <img src="images/icon-angle-right.svg" alt="right"></button>
-          </div>
         </article>
       </div>
+
     </main>
 
-    <img class="dark" src="images/image-about-dark.jpg" alt="dark-chair">
+    <div class="btns">
+      <button class="controlLeft" onclick="leftSwap()"><img src="images/icon-angle-left.svg" alt="left"> </button>
+      <button class="controlRight" onclick="rightSwap()"> <img src="images/icon-angle-right.svg" alt="right"></button>
+    </div>
 
-    <section class="about">
-      <h3> About our furniture</h3>
-      <p>
-        Our multifunctional collection blends design and function to suit your individual taste.
-        Make each room unique, or pick a cohesive theme that best express your interests and what
-        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-        or anything in between. Product specialists are available to help you create your dream space.
-      </p>
-    </section>
+    <div class="layer">
+      <img class="dark" src="images/image-about-dark.jpg" alt="dark-chair">
+
+      <section class="about">
+        <h3> About our furniture</h3>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </section>
+      
+      <img class="light" src="images/image-about-light.jpg" alt="light-chair">
+    </div>
     
-    <img class="light" src="images/image-about-light.jpg" alt="light-chair">
   </div>
 
   <footer>

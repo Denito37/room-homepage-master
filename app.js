@@ -2,12 +2,8 @@
 const slide1 = document.querySelector('.slide1');
 const slide2 = document.querySelector('.slide2');
 const slide3 = document.querySelector('.slide3');
-const right = document.querySelector('.right');
-const left = document.querySelector('.left');
-const right2 = document.querySelector('.right2');
-const left2 = document.querySelector('.left2');
-const right3 = document.querySelector('.right3');
-const left3 = document.querySelector('.left3');
+const right = document.querySelector('.controlRight');
+const left = document.querySelector('.controlLeft');
 const mNav = document.querySelector('.open');
 const exitbtn = document.querySelector('.open button')
 const menu = document.querySelector('header img');
@@ -23,11 +19,7 @@ document.addEventListener('keydown', keyControls);
 exitbtn.addEventListener('click',close);
 menu.addEventListener('click', open);
 right.addEventListener('click', rightCounter);
-right2.addEventListener('click', rightCounter);
-right3.addEventListener('click', rightCounter);
 left.addEventListener('click', leftCounter);
-left2.addEventListener('click', leftCounter);
-left3.addEventListener('click', leftCounter);
 
 // * Functions
 function rightCounter(){
@@ -37,7 +29,6 @@ function rightCounter(){
     else if (count == 3){
         count = 1;
     }
-    console.log(count);
 }
 function rightSwap(){
     if(count == 1){// * at 1
@@ -60,7 +51,6 @@ function leftCounter(){
     else{
         count = 3;
     }
-    console.log(count);
 }
 function leftSwap(){
     if(count == 1){// * at 1
