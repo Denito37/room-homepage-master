@@ -154,7 +154,7 @@ section h3{
     .btns{
         position: absolute;
         top: 25rem;
-        left: 55vw;
+        left: 70vw;
     }
     /* *SECTION */
     .layer{
@@ -163,6 +163,14 @@ section h3{
     }
     section{
         padding: 1rem 2rem;
+    }
+}
+/* *Phone */
+@media (max-width : 500px){
+    .btns{
+        position: absolute;
+        top: 20.5rem;
+        left: 50vw;
     }
 }
 /* *to add class in JS on click*/
