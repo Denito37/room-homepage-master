@@ -5,9 +5,11 @@
     --hd-clr:hsl(0, 0%, 27%);
 }
 /* *GENERAL */
+html{
+    overflow-x: hidden;
+}
 body{
     box-sizing: border-box;
-    overflow-x: hidden;
     margin: 0;
     font-family: 'League Spartan', sans-serif;
     font-size: 0.75rem;
@@ -22,9 +24,6 @@ p{
     overflow: scroll;
     max-height: 220px;
     min-width: 172px;
-}
-picture{
-    height: 534px;
 }
 /* *HEADER */
 header{
@@ -63,6 +62,9 @@ main a{
     text-transform: uppercase;
     text-decoration: none;
 }
+main img{
+    vertical-align: middle;
+}
 .slide1,.slide2,.slide3{
     display: flex;
     transition: all .5s ease-out .2s;/* * transition* */
@@ -73,13 +75,12 @@ main a{
     width: 80px;
     height: 80px;
 }
-@media (min-width: 769px){
-    .btns{
-        position: relative;
-        bottom: 5rem;
-        left: 58.3%;
-    }
-} .controlLeft{
+.btns{
+    position: relative;
+    bottom: 5rem;
+    left: 58.3%;
+}
+.controlLeft{
     position: absolute;
 }
 .controlRight{
@@ -146,19 +147,19 @@ section h3{
         flex-direction: column;
     }
     main{
+        position: relative;
         padding: 0rem 0rem;
     }
     main picture img{
         width: 100%;
-        max-height: 480px;
     }
     main h1{
         margin: 0;
     }
     .btns{
-        position: relative;
-        top: -27rem;
-        left: 70vw;
+        position: absolute;
+        bottom: 48.5%;
+        scale: .75;
     }
     /* *SECTION */
     .layer{
@@ -171,10 +172,13 @@ section h3{
 }
 /* *Phone */
 @media (max-width : 500px){
+    picture{
+        height: 450px;
+    }
     .btns{
-        position: relative;
-        top: -31.3rem;
-        left: 50vw;
+        scale: .75;
+        position: absolute;
+        bottom: 48.5%;
     }
 }
 /* *to add class in JS on click*/
